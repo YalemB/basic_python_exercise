@@ -11,7 +11,7 @@
 #         print(x)
 
 # 33333333333333
-n = input("Enter a number"):
- for num in range(n,1-1,-1):
+n = int(input("Enter a number: "))
+for num in range(n,1-1,-1):
     if num % 2 != 0:
       print(num)
