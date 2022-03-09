@@ -33,12 +33,12 @@
 #         count +=1
 # print(count)
 #
-# # average function
+# average function
 # exam = int(input("Exam grade: "))
 #
 # hw = int(input("hw grade: "))
 #
-# if exam >= 60 and abs exam - hw < 25:
+# if exam >= 60 and  exam - hw < 25:
 #         print (round((exam * 0.75) + (hw * 0.25)))
 # else:
 #      print(exam)
