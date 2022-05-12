@@ -568,32 +568,3 @@
 # for i in range(0, 10):
 #     print('*', end="")
 # print("")
-
-
-#def make_chocolate(small, big, goal):
-  # if (big * 5) + small < goal or goal % 5 > small:
-  #
-  #   return -1
-  #
-  # if big* 5 > goal:
-  #   return goal % 5
-  # return goal - big*5
-
-
-# def sum67(nums):
-#     new_l = []
-#     i = 0
-#     while nums[i] != 6:
-#         new_l.append(nums[i])
-#         i += 1
-#     while nums[i] != 7:
-#         i += 1
-#     i += 1
-#     while len(nums) > i:
-#         new_l.append(nums[i])
-#         i += 1
-#     return sum(new_l)
-#
-#
-# ls = [1, 3, 5, 6, 8, 4, 7, 1, 0, 9]
-# print(sum67(ls))
