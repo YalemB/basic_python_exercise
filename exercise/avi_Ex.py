@@ -1,31 +1,32 @@
 # check ID validation digit
 
-# ID = input("Enter 8 id digits: ")
-# while not ID.isnumeric() or len(ID) != 8:
-#     ID = input("Invalid digits\nEnter 8 id digits: ")
+ID = input("Enter 8 id digits: ")
+while not ID.isnumeric() or len(ID) != 8:
+    ID = input("Invalid digits\nEnter 8 id digits: ")
 
 
-# def check_digit(id):
-#     x = 0
-#     res = 0
+def check_digit(id):
+    x = 0
+    res = 0
 
-#     for i in range(len(id)):
-#         if i % 2 != 0:
-#             x = (int(id[i]) * 2)
-#         else:
-#             x = (int(id[i]))
-#         if x < 10:
-#             res = res + x
-#         else:
-#             res = res + ((x % 10) + (x // 10))
-#     digit = 10 - (res % 10)
-#     if digit != 10:
-#         return "check_digit = " + str(digit)
-#     else:
-#         return "check_digit = " + "0"
-#
-# st = "23240884"
-# print(check_digit(ID))
+    for i in range(len(id)):
+        # 1,3,5,7
+        if i % 2 != 0:
+            x = (int(id[i]) * 2)
+        else:
+            x = (int(id[i]))
+        if x < 10:
+            res = res + x
+        else:
+            res = res + ((x % 10) + (x // 10))
+    digit = 10 - (res % 10)
+    if digit != 10:
+        return "check_digit = " + str(digit)
+    else:
+        return "check_digit = " + "0"
+
+st = "23240884"
+print(check_digit(ID))
 # def caesar_encrypt(k, txt):
 #     alphabet = "abcdefghijklmnopqrstuvwxyz"
 #     cipher = ""
